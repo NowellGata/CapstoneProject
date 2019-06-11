@@ -15,7 +15,7 @@
     </head>
     <body>
     <h1>Two<span>Flower</span></h1>
-    <br />
+  
     <h2>better than a bouquet.</h2>
 
     <form action="action_page.php">
@@ -93,6 +93,24 @@
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
+
+
+<script>
+     var SquareConnect = require('square-connect');
+     var defaultClient = SquareConnect.ApiClient.instance;
+     
+     // Configure OAuth2 access token for authorization: oauth2
+     var oauth2 = defaultClient.authentications['oauth2'];
+     oauth2.accessToken = "YOUR ACCESS TOKEN";
+     
+     var api = new SquareConnect.LocationsApi();
+     
+     api.listLocations().then(function(data) {
+       console.log('API called successfully. Returned data: ' + data);
+     }, function(error) {
+       console.error(error);
+     });
+</script>
 
 <script>
   // Your web app's Firebase configuration
