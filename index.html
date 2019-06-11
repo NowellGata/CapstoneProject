@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +12,8 @@
       rel="style"
     />
     <title>TwoFlower</title>
+    </head>
+    <body>
     <h1>Two<span>Flower</span></h1>
     <br />
     <h2>better than a bouquet.</h2>
@@ -82,5 +85,29 @@
     <footer>
       <p>© 2019 Nowell Gata</p>
     </footer>
-  </head>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCBchrMjAGeU0N4p8dWr-S4C7e0TuPnWWk",
+    authDomain: "twoflowerlogin.firebaseapp.com",
+    databaseURL: "https://twoflowerlogin.firebaseio.com",
+    projectId: "twoflowerlogin",
+    storageBucket: "twoflowerlogin.appspot.com",
+    messagingSenderId: "452117682418",
+    appId: "1:452117682418:web:6322c0f3a3113bc8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./index.js"></script>
+  </body>
 </html>
