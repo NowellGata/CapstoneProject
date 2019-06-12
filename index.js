@@ -12,7 +12,7 @@ const router = new Navigo(window.location.origin);
 const root = document.querySelector('#root');
 // render receives an argument as a named parameter: 'state'
 
-function render(state) {
+function render(state){
     // TODO: Use Shadow DOM and Virtual DOM 'diffing' to avoid re-rendering ALL of the components
     root.innerHTML = `
   ${Navigation(state)}
@@ -23,7 +23,7 @@ function render(state) {
     router.updatePageLinks();
 }
 
-function handleRoutes(params) {}
+function handleRoutes(params){}
 
 router
     .on(':path', (params) => {
@@ -39,11 +39,12 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     .then((json) => console.log(json));
 
 // Event Listener for when User hits the submit button
-function logSubmit(event) {
+function logSubmit(event){
     log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
     event.preventDefault();
 }
 
 const form = document.getElementById('form');
 const log = document.getElementById('log');
+
 form.addEventListener('submit', logSubmit);

@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Monetary Needs</title>
-  </head>
-  <body>
-    <h1>TwoFlower</h1>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway" rel="style" />
+    <link rel="stylesheet" href="style.css" />
+    <title> Monetary Needs </title>
+</head>
+
+
+<body>
+    <div class="imgcontainer">
+        <img src="https://i.imgur.com/FsvLRFv.png" alt="Avatar" class="avatar" />
+    </div>
     <h2>
-      Average funeral costs and expenses are often a huge surprise to a grieving
-      family. This is the heart of TwoFlower: to engage the friends and family
-      of the bereaved to help shoulder the financial burden of the often
-      astronomical costs of funeral expenses.
+        Average funeral costs and expenses are often a huge surprise to a grieving family. This is the heart of TwoFlower: to engage the friends and family of the bereaved to help shoulder the financial burden of the often astronomical costs of funeral expenses.
     </h2>
     <h2>
-      In this time of need, anything helps. Please help communicate your needs
-      to your friends and family.
+        In this time of need, anything helps. Please help communicate your needs to your friends and family.
     </h2>
     <h3>Please enter the projected costs of the funeral</h3>
-
+    <form action="https://formspree.io/nowell.gata@gmail.com " method="POST" />
     <label for="permits">Permits</label>
     <input type="number" id="permits" name="permits" min="0" max="10000" />
     <label for="transport">Transport</label>
@@ -27,21 +30,14 @@
     <label for="permits">Preparation</label>
     <input type="number" id="prep" name="prep" min="0" max="10000" />
     <label for="permits">Facilities</label>
-    <input
-      type="number"
-      id="facilities"
-      name="facilities"
-      min="0"
-      max="10000"
-    />
+    <input type="number" id="facilities" name="facilities" min="0" max="10000" />
     <label for="permits">Hearse</label>
     <input type="number" id="hearse" name="hearse" min="0" max="10000" />
     <label for="permits">Cemetary Costs</label>
     <input type="number" id="cemetary" name="cemetary" min="0" max="10000" />
 
     <h3>
-      Peripheral costs add up. Please enter the projected costs for the
-      following:
+        Peripheral costs add up. Please enter the projected costs for the following:
     </h3>
     <label for="travel">Travel</label>
     <input type="number" id="travel" name="travel" min="0" max="10000" />
@@ -49,5 +45,9 @@
     <input type="number" id="care" name="care" min="0" max="10000" />
     <label for="Debts">Debt</label>
     <input type="number" id="Debt" name="Debt" min="0" max="10000" />
-  </body>
+
+    <input type="submit" value="Submit">
+    </form>
+</body>
+
 </html>
