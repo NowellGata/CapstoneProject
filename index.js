@@ -7,6 +7,7 @@ import * as states from './store';
 import { capitalize } from 'lodash';
 
 import Navigo from 'navigo';
+
 const router = new Navigo(window.location.origin);
 // Use innerHTML property as a SETTER
 const root = document.querySelector('#root');

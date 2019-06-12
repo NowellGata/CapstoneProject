@@ -13,7 +13,7 @@
     <title>TwoFlower</title>
 </head>
 
-<body>
+<!-- <body>
     <h1>Two<span>Flower</span></h1>
     <p></p>
     <h2>better than a bouquet.</h2>
@@ -62,69 +62,36 @@
             <span class="psw ">Forgot <a href="# ">password?</a></span>
         </div>
         </div>
-    </form>
+    </form> -->
 
-    <footer>
-        <p>© 2019 Nowell Gata</p>
-    </footer>
+<!-- <footer>
+    <p>© 2019 Nowell Gata</p>
+</footer> -->
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js "></script>
-    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js "></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js "></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js "></script>
 
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
+<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyCBchrMjAGeU0N4p8dWr-S4C7e0TuPnWWk ",
-            authDomain: "twoflowerlogin.firebaseapp.com ",
-            databaseURL: "https://twoflowerlogin.firebaseio.com ",
-            projectId: "twoflowerlogin ",
-            storageBucket: "twoflowerlogin.appspot.com ",
-            messagingSenderId: "452117682418 ",
-            appId: "1:452117682418:web:6322c0f3a3113bc8 "
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="./index.js "></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCBchrMjAGeU0N4p8dWr-S4C7e0TuPnWWk ",
+        authDomain: "twoflowerlogin.firebaseapp.com ",
+        databaseURL: "https://twoflowerlogin.firebaseio.com ",
+        projectId: "twoflowerlogin ",
+        storageBucket: "twoflowerlogin.appspot.com ",
+        messagingSenderId: "452117682418 ",
+        appId: "1:452117682418:web:6322c0f3a3113bc8 "
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./index.js "></script>
 
-    <script>
-        var dwolla = require('dwolla-v2');
-
-        var client = new dwolla.Client({
-            id: "...",
-            secret: "..."
-        });
-
-        var appToken = new client.Token({
-            access_token: "utMk2gCpcGCvhKK7p3wk8WMFkiA9ldLtoneVPcYrRW9bBzKW2D"
-        });
-
-        var requestBody = {
-            _links: {
-                source: {
-                    href: 'https://api-sandbox.dwolla.com/funding-sources/118b08b9-e1eb-48b7-94ad-866989b0764e'
-                },
-                destination: {
-                    href: 'https://api-sandbox.dwolla.com/funding-sources/2fa64102-185d-443d-9001-dda9bc37651d'
-                }
-            },
-            amount: {
-                currency: 'USD',
-                value: '1.00'
-            }
-        };
-
-        appToken
-            .post('transfers', requestBody)
-            .then(function(res) {
-                res.headers.get('location'); // => 'https://api-sandbox.dwolla.com/transfers/74c9129b-d14a-e511-80da-0aa34a9b2388'
-            });
-    </script>
 
 </body>
 
