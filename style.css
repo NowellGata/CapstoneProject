@@ -5,6 +5,7 @@ body {
   background: 50%;
   background-color: slategray;
   background-size: cover;
+  margin: 15%;
 }
 h1,
 h2 {
@@ -38,7 +39,7 @@ input[type="password"] {
 }
 
 button {
-  background-color: slategray;
+  background-color: purple;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -64,7 +65,7 @@ button:hover {
 
 img.avatar {
   width: 40%;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .container {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,13 +16,25 @@
     </head>
     <body>
     <h1>Two<span>Flower</span></h1>
-  
+    <p></p>
     <h2>better than a bouquet.</h2>
+
+    <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#">What we do</a>
+        <a href="#">How this works</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+</nav>
+
 
     <form action="action_page.php">
       <div class="imgcontainer">
         <img
-          src="http://www.supercoloring.com/sites/default/files/styles/coloring_medium/public/cif/2016/01/sugar-skull-with-flowers-coloring-page.png"
+          src="https://i.imgur.com/FsvLRFv.png"
           alt="Avatar"
           class="avatar"
         />
@@ -73,19 +86,10 @@
       </div>
     </form>
 
-    <div class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <div class="dropdown-content">
-        <a href="#">What we do</a>
-        <a href="#">How this works</a>
-        <a href="#">FAQ</a>
-      </div>
-    </div>
-
     <footer>
       <p>© 2019 Nowell Gata</p>
     </footer>
-    
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
@@ -93,24 +97,6 @@
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
-
-
-<script>
-     var SquareConnect = require('square-connect');
-     var defaultClient = SquareConnect.ApiClient.instance;
-     
-     // Configure OAuth2 access token for authorization: oauth2
-     var oauth2 = defaultClient.authentications['oauth2'];
-     oauth2.accessToken = "YOUR ACCESS TOKEN";
-     
-     var api = new SquareConnect.LocationsApi();
-     
-     api.listLocations().then(function(data) {
-       console.log('API called successfully. Returned data: ' + data);
-     }, function(error) {
-       console.error(error);
-     });
-</script>
 
 <script>
   // Your web app's Firebase configuration
