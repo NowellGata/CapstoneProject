@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "jshint": "^2.10.2",
-    "lodash": "4.17.11",
+    "lodash": "4.17.19",
     "navigo": "7.1.2"
   }
 }
